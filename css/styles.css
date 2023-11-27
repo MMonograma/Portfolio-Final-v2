@@ -235,6 +235,9 @@ section.modales .btnmodal{
     
 }
 @media (max-width: 720px){
+    nav a.navbar-brand{ 
+        font-size: 1.3rem;    
+    }
     main .presentacion{ 
         height: auto;
     }
@@ -272,6 +275,9 @@ section.modales .btnmodal{
 }
 
 @media (max-width: 480px){
+    nav a.navbar-brand{ 
+        font-size: 1rem;    
+    }
 .sobre-mi h2{
     font-size: 2rem;
 }
