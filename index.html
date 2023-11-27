@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Portfolio Digital</title>
+</head>
+<body>
+  <header>        
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container p-3">
+                <a class="navbar-brand" href="#ppl">Leandro Gabellotta</a>
+        <!-- Botón de alternancia para dispositivos móviles y tablets -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <!-- Menú de navegación -->
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item mx-3 px-2">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item mx-3 px-2">
+                    <a class="nav-link" href="#info">Sobre Mí</a>
+                  </li>
+                  <li class="nav-item mx-3 px-2">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>  
+          <button id="btnScrollToTop" class="btn btn-dark" style="display:none;"></button>
+  </header>
+  <main>
+    <!-- Seccion de Presentacion-->
+      <section id="ppl">
+        <div class="container-fluid text-center presentacion">
+            
+            <img src="./img/perfil.jpg" alt="Imagen de perfil" class="img-fluid rounded-circle mt-5 p-2 perfil">
+            <div class="container-fluid d-flex flex-column  mt-3 p-4 justify-content-center">
+                <h1 class=" mb-3 text-center">Leandro Gabellotta</h1>
+                    <div class="container-fluid d-flex  mt-3 gap-5 iconos">
+                        <img src="./img/coding-icono.png" alt="icono programador" width="25vw" height="auto">
+                        <img src="./img/gaming-icono.png" alt="icono de gaming" width="25vw" height="auto">
+                        <img src="./img/streaming-icon.png" alt="icono de Streaming" width="25vw" height="auto">
+                    </div>
+                    <h6 class="mt-3">Maquetador Web - Gaming - Streaming</h6>
+                </div>
+            </div>
+      </section>
+    <!-- Seccion de Cards -->
+      <section class="py-3" id="portfolio">
+    <div class="container text-center mt-3 mb-3 cardtitle">
+        <h2>Portfolio</h2>
+      </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6 mb-4 ">
+          <div class="card rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#modal1">
+            <img src="./img/CVBatman.png" class="card-img-top" alt="CV-Batman">
+            <div class="card-body text-center">
+              <h5 class="card-title">Curriculum Batman</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#modal2">
+            <img src="./img/lemon-pie.jpeg" class="card-img-top" alt="Lemon-Pie">
+            <div class="card-body text-center">
+              <h5 class="card-title">Receta Lemon Pie</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#modal3">
+            <img src="./img/petshop.jpeg" class="card-img-top" alt="Logo PetShop">
+            <div class="card-body text-center">
+              <h5 class="card-title">PetShop</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#modal4">
+            <img src="./img/piza.jpeg" class="card-img-top" alt="Logo pizza">
+            <div class="card-body text-center">
+              <h5 class="card-title">Pizza Front</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card rounded-4 shadow" data-bs-toggle="modal" data-bs-target="#modal5">
+            <img src="./img/super.png" class="card-img-top" alt="Logo Heroes">
+            <div class="card-body text-center">
+              <h5 class="card-title">Heroes</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </section>
+    <!--Seccion Sobre Mi-->
+      <section id="info">
+          <div class="container-fluid text-center sobre-mi">
+            <div class="container">
+              <h2>SOBRE MÍ</h2>
+              <img src="./img/emoji-removebg-preview.png" alt="Imagen de perfil" class="img-fluid p-2 emoji">
+              <h5>Mi Nombre es Leandro Gabellotta</h5>
+              <p class="mt-3">Estudiante del Profesorado Universitario en Computación de la Facultad de Ciencias Exactas y Naturales. Tambien soy Tecnico Reparador de PC y Streamer principiante. En esta Pagina encontraran trabajos practicos realizados en el transcurso de la materia Taller de Desarrollo Web 2023. Dictada nada mas ni nada menos que por el gran e inigualable <span class="chupamedias">Lucas Diaz</span>!!!.</p>
+            </div>
+            <a href="./docs/Gabellotta Leandro CV.pdf" download>
+              <button type="button" class="btn btn-outline-light m-3 p-2 btn-lg CV">Descargar CV</button>
+            </a>
+          </div>
+      </section> 
+    <!-- Modales -->
+      <Section class="modales">
+    <!-- Modal 1 -->
+      <div class="modal modal-fullscreen-sm-down" tabindex="-1" id="modal1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">CV Batman</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex flex-column text-center ">
+                <img src="./img/CVBatman.png" alt="batman">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione in deleniti voluptatum. Nihil cupiditate fugiat reprehenderit voluptatibus modi rem non, vitae deleniti vel, cum reiciendis ducimus numquam voluptas eos magni!</p>
+                <button type="button" class="btn btn-outline-light btnmodal" id="visitarSitio1">Visitar Sitio</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Modal 2 -->
+      <div class="modal modal-fullscreen-sm-down" tabindex="-1" id="modal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Lemon Pie</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex flex-column text-center ">
+            <img src="./img/lemon-pie.jpeg" alt="logo Lemon">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione in deleniti voluptatum. Nihil cupiditate fugiat reprehenderit voluptatibus modi rem non, vitae deleniti vel, cum reiciendis ducimus numquam voluptas eos magni!</p>
+            <button type="button" class="btn btn-outline-light btnmodal" id="visitarSitio2">Visitar Sitio</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    <!-- Modal 3 -->
+      <div class="modal modal-fullscreen-sm-down" tabindex="-1" id="modal3">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">PetShop</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column text-center ">
+          <img src="./img/petshop.jpeg" alt="logo pet">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione in deleniti voluptatum. Nihil cupiditate fugiat reprehenderit voluptatibus modi rem non, vitae deleniti vel, cum reiciendis ducimus numquam voluptas eos magni!</p>
+          <button type="button" class="btn btn-outline-light btnmodal" id="visitarSitio3">Visitar Sitio</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+    <!-- Modal 4 -->
+      <div class="modal modal-fullscreen-sm-down" tabindex="-1" id="modal4">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Pizza Front</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column text-center ">
+          <img src="./img/piza.jpeg" alt="logo pizza">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione in deleniti voluptatum. Nihil cupiditate fugiat reprehenderit voluptatibus modi rem non, vitae deleniti vel, cum reiciendis ducimus numquam voluptas eos magni!</p>
+          <button type="button" class="btn btn-outline-light btnmodal" id="visitarSitio4">Visitar Sitio</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+    <!-- Modal 5 -->
+      <div class="modal modal-fullscreen-sm-down" tabindex="-1" id="modal5">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Super</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column text-center ">
+          <img src="./img/super.png" alt="logo super">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione in deleniti voluptatum. Nihil cupiditate fugiat reprehenderit voluptatibus modi rem non, vitae deleniti vel, cum reiciendis ducimus numquam voluptas eos magni!</p>
+          <button type="button" class="btn btn-outline-light btnmodal" id="visitarSitio5">Visitar Sitio</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+      </Section>
+
+  </main>
+  <footer>
+    <section id="contacto">
+      <div class="container-fluid pie">
+        <div class="container">
+          <div class="row">
+            <!-- Redes Sociales -->
+            <div class="col-md-6 mt-5 social">
+              <h5>Redes Sociales</h5>
+              <ul class="list-unstyled logo-list">
+                <li><a href="https://www.twitch.tv/Mmonograma"><img src="./img/icons8-twitch-240.png" class="img-logo" alt="Logo Twitch"></a> Twitch</li>
+                <li><a href="https://www.tiktok.com/@mmonograma?is_from_webapp=1&sender_device=pc"><img src="./img/icons8-tik-tok-240.png" class="img-logo" alt=" Logo Tiktok" ></a> Tiktok</li>
+                <li><a href="www.linkedin.com/in/leandrix-g-3437bb236"><img src="./img/icons8-linkedin-240.png" class="img-logo" alt=" Logo LinkedIn"></a>LinkedIn</li>
+                <li><a href="https://www.instagram.com/leandrix.g"><img src="./img/icons8-instagram-240.png" class="img-logo" alt=" Logo Instagram"></a>Instagram</li>
+              </ul>
+            </div>
+            <!-- Contacto -->
+            <div class="col-md-6 mt-5 contact">
+              <h5>Contacto</h5>
+              <div>
+                <p>Localidad: Santa Rosa - La Pampa</p>
+                <p>Teléfono: (2954)-336504</p>
+                <p>Email: Leandrix92@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Derechos Reservados -->
+      <div class="container-fluid text-center derecho">
+        <p class="mb-0">Realizado por Gabellotta Leandro - Todos los derechos reservados - 2023</p>
+      </div>
+    </section>
+  </footer>   
+<!--Script para Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<!--Script para JS-->
+<script src="./js/script.js"></script>
+  </body>
+</html>

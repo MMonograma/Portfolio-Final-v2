@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border:0;
+    outline:0;
+    font-size: 16px;
+}
+/*
+Paleta de Colores
+Fondo nav,footer y modals: rgb(4, 37, 58)
+Fondo Secciones: rgb(159, 199, 192);
+Letras: rgb(225, 221, 191);
+Fuente Cuerpo: font-family: 'Kanit', sans-serif;
+Fuente Nav, Footer y Modals: font-family: 'Nova Square', sans-serif;
+*/
+nav {
+    background-color: rgb(4, 37, 58);
+}
+nav a.navbar-brand{ 
+    font-family: 'Nova Square', sans-serif;
+    color: rgb(225, 221, 191)!important;
+    font-size: 1.5rem;    
+}
+.nav-link {
+    font-family: 'Nova Square', sans-serif;
+    color: rgb(225, 221, 191)!important;
+    font-size: 1.3rem;
+}
+a.nav-link:hover {
+    transform: scale(1.2);
+}
+
+main .presentacion{ 
+    
+    background-color:rgb(159, 199, 192);
+    height: 850px;
+    
+}
+main .presentacion img.perfil{
+    width: 25vw;
+    height: auto;
+}
+main .presentacion h1 {
+    font-size: 4rem;
+    font-family: 'Kanit', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+main .presentacion h6 {
+    font-size: 1.2rem;
+    font-family: 'Kanit', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+main .iconos {
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+.cardtitle h2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 4rem;
+    color:rgb(4, 37, 58) ;
+    padding: 20px;
+    border: 5px ridge rgb(225, 221, 191) ; 
+    border-radius: 70px;
+}
+h5.card-title {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+    color:rgb(4, 37, 58) ;
+    padding: 10px;
+}
+.sobre-mi {
+    background-color: rgb(159, 199, 192);
+    height: 950px;
+}
+.sobre-mi h2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 4rem;
+    font-weight: bolder;
+    padding: 30px;
+    color:rgb(4, 37, 58);
+}
+
+.sobre-mi h5{
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.25rem;
+    color:rgb(4, 37, 58);
+}
+.sobre-mi p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.75rem;
+    line-height: 3rem;
+    color:rgb(4, 37, 58);
+}
+.sobre-mi .chupamedias {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.sobre-mi a .CV{
+    color:rgb(225, 221, 191); 
+    background-color:rgb(4, 37, 58) ;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5rem;
+}
+.sobre-mi a .CV:hover{
+    color: rgb(4, 37, 58);
+    background-color:rgb(225, 221, 191);
+    transition: 500ms;
+}
+
+.pie {
+    background-color:rgb(4, 37, 58); ;
+    color: rgb(225, 221, 191);
+}
+.pie h5{
+    font-family: 'Nova Square', sans-serif;
+    font-size: 2rem;
+}
+.img-logo{
+    width: 30px;
+}
+.logo-list li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px;
+    font-family: 'Nova Square', sans-serif;
+    font-size: 1.2rem;
+}
+.contact p {
+        font-family: 'Nova Square', sans-serif;
+        font-size: 1.25rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 5px;
+    }
+.derecho {
+    background-color: rgb(159, 199, 192);
+    color: rgb(4, 37, 58);
+    font-family: 'Nova Square', sans-serif;
+    font-size: 1rem;
+}
+
+#btnScrollToTop {
+    width: 50px; 
+    height: 50px;
+    background-image: url('../img/flechas.png');
+    color:rgb(225, 221, 191);;
+    background-color: rgb(4, 37, 58);
+    background-size: cover;
+    background-position: center;
+    border: none;
+    border-radius: 50%;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+  }
+  
+  #btnScrollToTop:hover {
+    cursor: pointer;
+  }
+  
+
+section.modales div.modal-content {
+    background-color: rgb(4, 37, 58) !important;
+    font-family: 'Nova Square', sans-serif;
+    color: rgb(225, 221, 191);
+}
+
+section.modales h3.modal-title{
+    font-size: 2.5rem;
+}
+section.modales div.modal-body p{
+    font-size: 1.1rem;
+}
+
+section.modales .btnmodal{
+    border-radius: 30px;
+    font-size: 1.3rem;
+    
+}
+
+@media (max-width: 1440px){
+    main .presentacion{ 
+        height: 750px;
+    }
+}
+@media (max-width: 1280px){
+    main .presentacion{ 
+        height: 700px;
+    }
+    .cardtitle h2{
+        font-size: 3rem;
+       
+}
+}
+@media (max-width: 1000px){
+    main .presentacion{ 
+        height: auto;
+    }
+    main .presentacion h1 {
+        font-size: 2.5rem;
+        font-family: 'Kanit', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    main .presentacion h6 {
+        font-size: 1rem;
+        font-family: 'Kanit', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    main .presentacion img.perfil{
+        width: 30vw ;
+        height: auto;
+    }
+    
+    .sobre-mi h2{
+        font-size: 2.5rem;
+    }
+    
+    .sobre-mi h5{
+        font-size: 2.25rem;
+    }
+    .sobre-mi p{
+        font-family: 'Kanit', sans-serif;
+        font-weight: 400;
+        line-height: 1.8rem;
+        color:rgb(4, 37, 58);
+    }
+    
+}
+@media (max-width: 720px){
+    main .presentacion{ 
+        height: auto;
+    }
+    main .presentacion h1 {
+        font-size: 2rem;
+        font-family: 'Kanit', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    main .presentacion h6 {
+        font-size: 0.9rem;
+        font-family: 'Kanit', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    main .presentacion img.perfil{
+        width: 50vw ;
+        height: auto;
+    }
+    .cardtitle h2{
+        font-size: 2.5rem;
+       
+    }
+    .emoji {
+        width: 35vw;
+    }
+    section.modales h3.modal-title{
+        font-size: 1.5rem;
+    }
+    h5.card-title {
+        font-size: 1.5rem;
+    }
+    .sobre-mi {
+        background-color: rgb(159, 199, 192);
+        height: 1000px;
+    }
+}
+
+@media (max-width: 480px){
+.sobre-mi h2{
+    font-size: 2rem;
+}
+.emoji {
+    width: 45vw;
+}
+.sobre-mi h5{
+    font-size: 1.4rem;
+}
+.sobre-mi p{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color:rgb(4, 37, 58);
+}
+}
+
+@keyframes changeColor {
+    0% {
+      color: red;
+      transform: scale(1);
+    }
+    50% {
+      color: blue;
+      transform: scale(1.2);
+    }
+    100% {
+      color: green;
+      transform: scale(1);
+    }
+  }
+  
+  .chupamedias {
+    animation: changeColor 3s infinite; /* 3s es la duración de la animación, puedes ajustarla según tu preferencia */
+    transition: color 0.5s; /* Añade una transición para suavizar el cambio de color */
+    cursor: pointer; /* Opcional: cambia el cursor al pasar por encima */
+  }
